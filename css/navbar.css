@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+header{
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+nav {
+  height: 70px;
+  padding: 0 30px;
+  background-color: rgb(86, 86, 86);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 100%;
+}
+
+.logo span {
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.hamburger {
+  height: 50px;
+  width: 60px;
+  padding: 3px 10px;
+  background: none;
+  border: none;
+  display: none;
+}
+
+.hamburger-icon {
+  display: block;
+  height: 5px;
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+}
+
+ul {
+  display: flex;
+  height: 100%;
+}
+
+li {
+  position: relative;
+  padding: 0 30px;
+}
+
+li:hover {
+  background-color: rgba(255, 255, 255, 0.365);
+}
+
+.menu-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+.categories {
+  display: none;
+  height: auto;
+  width: 130%;
+  position: absolute;
+  left: 0;
+  background-color: rgb(255, 255, 255, 0.85);
+  border-top: 1px solid white;
+  border-radius: 0 0 15px 15px;
+  z-index: 999;
+}
+
+.categories li {
+  padding: 20px 0;
+}
+
+.categories li:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.categories li a {
+  color: black;
+}
+
+li:hover .categories {
+  display: block;
+}
+sup {
+  display: inline-block;
+  background-color: red;
+  border-radius: 45%;
+  padding: 5px 7px;
+  margin-left: 3px;
+}
+
+@media screen and (max-width: 1256px) {
+  .logo span {
+    font-size: 1.5rem;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  ul {
+    height: calc(100vh - 70px);
+    width: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 70px;
+    flex-direction: column;
+    background-color: rgba(86, 86, 86);
+    z-index: 999;
+  }
+
+  li {
+    padding: 25px 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  nav {
+    padding: 0 10px;
+  }
+
+  .logo span {
+    display: none;
+  }
+}

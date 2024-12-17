@@ -1,0 +1,91 @@
+.cart {
+    height: calc(100vh - 70px);
+    overflow: auto;
+    background-color: rgba(137, 203, 150, 0.412);
+    padding: 20px;
+}
+
+table {
+    overflow: auto;
+    border: none;
+    border-collapse: collapse;
+}
+
+thead tr {
+    height: 50px;
+    background-color: rgb(60, 203, 53);
+    box-sizing: border-box;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    font-weight: bold;
+    text-transform: capitalize;
+    color: white;
+}
+
+#products {
+    width: 50%;
+}
+
+tbody {
+    background-color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(185, 185, 185, 0.36);
+}
+
+.product-image {
+    height: 50px;
+}
+
+.btn {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+i {
+    font-weight: bold;
+    font-size: 20px;
+    color: purple;
+}
+
+tfoot {
+    background-color: rgb(127, 127, 127);
+}
+
+tfoot tr {
+    height: 50px;
+}
+
+tfoot tr:first-child {
+    border-bottom: 1px solid white;
+}
+
+tfoot td {
+    font-weight: bold;
+    text-transform: capitalize;
+    color: white;
+}
+
+.buy-now-button {
+    height: 40px;
+    padding: 0 15px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(26, 79, 225);
+    color: white;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-weight: bold;
+}

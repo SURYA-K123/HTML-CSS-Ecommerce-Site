@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/add-product.css" />
+    <link rel="icon" href="./images/logo.png" />
+    <title>Add Item</title>
+  </head>
+
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="./images/logo.png" alt="logo" /><span>shopper platform</span>
+      </div>
+      <ul class="menus">
+        <li>
+          <a href="./index.html" class="menu-link">home</a>
+        </li>
+        <li>
+          <a href="./aboutus.html" class="menu-link">about us</a>
+        </li>
+        <li>
+          <a href="" class="menu-link">contact us</a>
+        </li>
+        <li>
+          <a href="./login.html" class="menu-link">logout</a>
+        </li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <img src="./images/hamburger.jpeg" alt="logo" />
+      </div>
+    </nav>
+    <section class="add-product-section">
+      <fieldset>
+        <h1 class="form-heading">add product form</h1>
+        <form action="" class="add-product-form">
+          <label for="product-name">
+            <span>enter the product name</span>
+            <input
+              type="text"
+              name="product-name"
+              id="product-name"
+              placeholder="Enter the product name"
+            />
+          </label>
+          <label for="product-price">
+            <span>enter the product price</span>
+            <input
+              type="number"
+              name="product-price"
+              id="product-price"
+              placeholder="Enter the price"
+            />
+          </label>
+          <label for="product-category">
+            <span>select the product category</span>
+            <select name="product-category">
+              <option value="mobiles">Mobiles</option>
+              <option value="grocery">Grocery</option>
+              <option value="dresses">Dresses</option>
+            </select>
+          </label>
+          <label for="product-image">
+            <span>upload product image</span>
+            <input
+              type="file"
+              name="product-image"
+              id="product-image"
+              placeholder="Upload the product image"
+            />
+          </label>
+          <label for="product-details">
+            <span>enter the product details</span>
+            <textarea
+              name="product-details"
+              id="product-details"
+              rows="5"
+              cols="5"
+              placeholder="Enter the product details"
+            ></textarea>
+          </label>
+          <label for="submit">
+            <input type="submit" name="submit" value="add product" />
+          </label>
+        </form>
+      </fieldset>
+    </section>
+    <script src="./script/navbar.js"></script>
+  </body>
+</html>

@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+}
+
+fieldset {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.084),
+    0 6px 20px 0 rgba(0, 0, 0, 0.091);
+  border: none;
+  border-radius: 8px;
+}
+
+.form {
+  flex: 1;
+  padding: 10px 30px;
+}
+
+.form > * {
+  width: 100%;
+  margin: auto;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.brand img {
+  height: 150px;
+}
+
+.brand span {
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+.small-text {
+  padding: 0 0 10px 0;
+}
+
+.large-text {
+  padding: 0 0 30px 0;
+}
+
+input,
+.sign-in-btn {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  margin: 15px 0;
+  box-sizing: border-box;
+  transition: box-shadow linear 0.1s;
+  outline: none;
+  border: 1px solid black;
+}
+
+.sign-in-btn a {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+input {
+  padding-left: 10px;
+}
+
+input:focus {
+  box-shadow: 0 0 0 0.2rem rgba(54, 96, 224, 0.56);
+}
+
+.sign-in-btn {
+  border: none;
+  background-color: rgb(54, 96, 224);
+  color: white;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.other-options-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.line {
+  height: 1px;
+  background-color: grey;
+  flex: 1;
+}
+
+.line1 {
+  margin-right: 8px;
+}
+
+.line2 {
+  margin-left: 8px;
+}
+
+.other-options {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.other-options button {
+  outline: none;
+  height: 50px;
+  width: 100px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.facebook {
+  background: url("../images/facebook-icon.png") no-repeat center / 30px;
+}
+.google {
+  background: url("../images/google-icon.webp") no-repeat center / 30px;
+}
+.apple {
+  background: url("../images/apple-icon.png") no-repeat center / 30px;
+}
+.image {
+  flex: 1;
+  background: url("../images/background.png") no-repeat center / cover;
+}
+
+@media screen and (max-width: 1200px) {
+  fieldset {
+    width: 70%;
+  }
+  .image {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  fieldset {
+    width: 100%;
+  }
+}

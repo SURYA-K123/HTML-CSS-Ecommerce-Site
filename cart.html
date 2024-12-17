@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/navbar.css" />
+  <link rel="stylesheet" href="./css/cart.css" />
+  <link rel="icon" href="./images/logo.png" />
+  <title>Cart</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="./images/logo.png" alt="logo" /><span>shopper platform</span>
+      </div>
+      <ul class="menus">
+        <li>
+          <a href="./index.html" class="menu-link">home</a>
+        </li>
+        <li>
+          <a href="./products.html" class="menu-link">products</a>
+          <ul class="categories">
+            <li>
+              <a href="" class="menu-link">mobiles</a>
+            </li>
+            <li>
+              <a href="" class="menu-link">grocery</a>
+            </li>
+            <li>
+              <a href="" class="menu-link">dresses</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="./aboutus.html" class="menu-link">about us</a>
+        </li>
+        <li>
+          <a href="" class="menu-link">contact us</a>
+        </li>
+        <li>
+          <a href="./cart.html" class="menu-link"><i class="fa fa-cart-shopping"><sup>3</sup></i></a>
+        </li>
+        <li>
+          <a href="./login.html" class="menu-link">logout</a>
+        </li>
+      </ul>
+      <button class="hamburger" id="hamburger">
+        <span class="hamburger-icon"></span>
+        <span class="hamburger-icon"></span>
+        <span class="hamburger-icon"></span>
+      </button>
+    </nav>
+  </header>
+  <section class="cart">
+    <table>
+      <thead>
+        <tr>
+          <th id="picture">picture</th>
+          <th id="products">products</th>
+          <th id="price">price ( in ₹ )</th>
+          <th>quantity</th>
+          <th id="add">add</th>
+          <th id="remove">remove</th>
+          <th id="amount">amount( in ₹ )</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <img src="./images/iphone.webp" alt="product-image" class="product-image" />
+          </td>
+          <td>
+            iPhone 12 (8 GB/128 GB/ iOS 14) 5G- 4K Bluetooth, USB (6.1 Inch, Natural...)
+          </td>
+          <td>45,490</td>
+          <td>1</td>
+          <td>
+            <button class="btn btn-add"><i class="fa fa-plus"></i></button>
+          </td>
+          <td>
+            <button class="btn btn-remove">
+              <i class="fa fa-minus"></i>
+            </button>
+          </td>
+          <td>45,490</td>
+        </tr>
+        <tr>
+          <td>
+            <img src="./images/smart-watch.jpg" alt="product-image" class="product-image" />
+          </td>
+          <td>
+            Smart Watch Full Touch Smart Watches for Android iOS Phones Compatible (Answer/Make Call) (Black)
+          </td>
+          <td>1,599</td>
+          <td>2</td>
+          <td>
+            <button class="btn btn-add"><i class="fa fa-plus"></i></button>
+          </td>
+          <td>
+            <button class="btn btn-remove">
+              <i class="fa fa-minus"></i>
+            </button>
+          </td>
+          <td>3,198</td>
+        </tr>
+        <tr>
+          <td>
+            <img src="./images/hp_laptop.jpg" alt="product-image" class="product-image" />
+          </td>
+          <td>
+            Hp Laptop (8 GB/512 GB SSD/ Windows 11 Home) 15s- fr4000TU Thin
+            and Light Laptop (15.6 Inch, Natural)
+          </td>
+          <td>40,990</td>
+          <td>1</td>
+          <td>
+            <button class="btn btn-add"><i class="fa fa-plus"></i></button>
+          </td>
+          <td>
+            <button class="btn btn-remove">
+              <i class="fa fa-minus"></i>
+            </button>
+          </td>
+          <td>40,990</td>
+        </tr>
+        <tr>
+          <td>
+            <img src="./images/camera.jpg" alt="product-image" class="product-image" />
+          </td>
+          <td>
+            Digital Camera, 48MP Cameras for Photography with WiFi & App Control, Macro&Wide Lens-32GB Card
+          </td>
+          <td>10,599</td>
+          <td>1</td>
+          <td>
+            <button class="btn btn-add"><i class="fa fa-plus"></i></button>
+          </td>
+          <td>
+            <button class="btn btn-remove">
+              <i class="fa fa-minus"></i>
+            </button>
+          </td>
+          <td>10,599</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="6">total amount to pay</td>
+          <td>₹ 1,00,277</td>
+        </tr>
+        <tr>
+          <td colspan="6"></td>
+          <td>
+            <button class="buy-now-button">buy now</button>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </section>
+  <script src="./script/navbar.js"></script>
+</body>
+
+</html>

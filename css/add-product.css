@@ -1,0 +1,78 @@
+.add-product-section {
+  height: calc(100vh - 70px);
+  background-color: rgba(137, 203, 150, 0.412);
+  overflow: auto;
+}
+
+fieldset {
+  width: 65%;
+  border: none;
+  margin: auto;
+  padding: 50px;
+  background-color: rgba(255, 255, 255, 0.837);
+}
+
+.form-heading{
+    text-align: center;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.736);
+}
+
+label {
+  display: block;
+  width: 100%;
+}
+
+span {
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  text-transform: capitalize;
+}
+
+input:not(input[type="file"]),
+select,
+textarea {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+  transition: box-shadow linear 0.1s;
+  border: 2px solid rgba(0, 0, 0, 0.353);
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+input,
+select {
+  height: 50px;
+}
+
+input:not(input[type="file"]):focus,
+textarea:focus,
+select:focus {
+  box-shadow: 0 0 0 0.2rem rgba(137, 203, 150, 0.923);
+}
+
+input[type="submit"] {
+  width: 50%;
+  margin: 10px auto;
+  background-color: gray;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+input[type="file"]::file-selector-button {
+  height: 50px;
+  width: 80px;
+  background: url("../images/upload.png") no-repeat center center / cover;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  color: transparent;
+  margin: 0 15px 0 0;
+}

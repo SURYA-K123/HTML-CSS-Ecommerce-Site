@@ -1,0 +1,105 @@
+footer {
+  background-color: rgba(86, 86, 86);
+  padding: 20px;
+}
+
+.footer-logo {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-logo img {
+  height: 100%;
+}
+.footer-logo span {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: white;
+}
+
+footer p {
+  text-align: center;
+  padding: 8px;
+  color: white;
+}
+
+footer a {
+  text-decoration: underline;
+}
+
+.download-options {
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.app-download-btn {
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.playstore-btn {
+  background: black url("../images/playstore.webp") no-repeat left center / 30px;
+  background-position: 8px;
+}
+
+.appstore-btn {
+  background: black url("../images/apple.png") no-repeat left center / 60px;
+}
+
+.app-download-btn span {
+  display: block;
+  padding-left: 50px;
+  color: white;
+}
+
+.app-download-btn .small-text {
+  text-transform: uppercase;
+  font-size: 9px;
+  text-align: start;
+}
+
+.app-download-btn .large-text {
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: start;
+}
+
+.social-media-section {
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.social-media-section i {
+  font-size: 30px;
+  color: white;
+}
+
+@media screen and (max-width: 570px) {
+  footer p{
+    font-size: 0.8rem;
+  }
+  .footer-logo {
+    height: 50px;
+  }
+
+  .app-download-btn .small-text {
+    font-size: 7px;
+  }
+  
+  .app-download-btn .large-text {
+    font-size: 14px;
+  }
+
+  .download-options, .social-media-section {
+    gap: 15px;
+  }
+}

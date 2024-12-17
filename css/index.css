@@ -1,0 +1,146 @@
+.intro {
+  position: relative;
+  height: 500px;
+  padding: 70px 0 0 100px;
+  box-sizing: border-box;
+  background: rgba(137, 203, 150, 0.412);
+}
+.intro-description {
+  width: 50%;
+  font-size: 80px;
+  text-transform: capitalize;
+}
+.explore-btn {
+  height: 50px;
+  width: 150px;
+  margin: 30px 0 0 30px;
+  color: rgb(60, 203, 53);
+  border: 2px solid rgb(60, 203, 53);
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: capitalize;
+  background-color: transparent;
+  cursor: pointer;
+  background-color: green;
+}
+
+.explore-btn:hover {
+  color: yellow;
+  border: 2px solid yellow;
+}
+
+.buttons {
+  position: absolute;
+  left: 50%;
+  bottom: 15px;
+  transform: translateX(-50%);
+}
+
+.buttons span {
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: rgb(161, 161, 161);
+}
+
+span.active {
+  height: 9px;
+  width: 9px;
+  background-color: blue;
+}
+
+.top-deals {
+  background-color: rgba(137, 203, 150, 0.412);
+  margin-top: 50px;
+  padding: 20px 20px;
+}
+
+.deals-text {
+  text-align: center;
+  font-weight: bold;
+}
+
+.top-deals-products {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-top: 10px;
+}
+
+.card {
+  height: 300px;
+  width: 20%;
+  background-color: white;
+  position: relative;
+  padding: 25px;
+}
+
+.card img {
+  height: 100%;
+  width: 100%;
+}
+
+.discount {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: rgb(60, 203, 53);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+}
+
+@media screen and (max-width: 956px) {
+  .intro {
+    background-size: contain;
+    background-position: center;
+    padding: 10px;
+    height: fit-content;
+  }
+
+  .intro-description {
+    width: 100%;
+    text-align: center;
+    font-size: 70px;
+  }
+
+  .explore-btn {
+    position: relative;
+    left: 50%;
+    transform: translateX(-70%);
+  }
+
+  .buttons {
+    display: none;
+  }
+
+  .card {
+    height: 250px;
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .intro-description {
+    font-size: 50px;
+  }
+  .top-deals-products {
+    gap: 10px;
+  }
+  .card {
+    height: 150px;
+    width: 35%;
+  }
+  .discount {
+    height: 30px;
+    width: 30px;
+  }
+}

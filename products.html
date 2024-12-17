@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/products.css">
+  <link rel="icon" href="./images/logo.png" />
+  <title>Home</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="./images/logo.png" alt="logo" /><span>shopper platform</span>
+      </div>
+      <ul class="menus">
+        <li>
+          <a href="./index.html" class="menu-link">home</a>
+        </li>
+        <li>
+          <a href="./products.html" class="menu-link">products</a>
+          <ul class="categories">
+            <li>
+              <a href="" class="menu-link">mobiles</a>
+            </li>
+            <li>
+              <a href="" class="menu-link">grocery</a>
+            </li>
+            <li>
+              <a href="" class="menu-link">dresses</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="./aboutus.html" class="menu-link">about us</a>
+        </li>
+        <li>
+          <a href="" class="menu-link">contact us</a>
+        </li>
+        <li>
+          <a href="./cart.html" class="menu-link"><i class="fa fa-cart-shopping"><sup>3</sup></i></a>
+        </li>
+        <li>
+          <a href="./login.html" class="menu-link">logout</a>
+        </li>
+      </ul>
+      <button class="hamburger" id="hamburger">
+        <span class="hamburger-icon"></span>
+        <span class="hamburger-icon"></span>
+        <span class="hamburger-icon"></span>
+      </button>
+    </nav>
+  </header>
+  <section class="search">
+    <form action="#">
+      <input type="text" placeholder="Type here to Search">
+      <button class="search-btn">search</button>
+    </form>
+    <button class="add-product-btn" id="add-product-btn"><span class="add-icon">+ </span>Add Product</button>
+  </section>
+  <section class="products">
+    <div class="card">
+      <img src="./images/hp_laptop.jpg" alt="product-image" class="product-image">
+      <h1 class="product-name">HP Laptop 5 gen</h1>
+      <p class="description">Hp Laptop (8 GB/512 GB SSD/ Windows 11 Home) 15s- fr4000TU Thin and Light Laptop (15.6
+        Inch, Natural...)</p>
+      <h3 class="price">₹ 40,990</h3>
+      <div class="button-group">
+        <button class="add-to-cart">add to cart</button>
+        <button class="buy-now">buy now</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./images/iphone.webp" alt="product-image" class="product-image">
+      <h1 class="product-name">Apple iPhone 12</h1>
+      <p class="description">iPhone 12 (8 GB/128 GB/ iOS 14) 5G- 4K Bluetooth, USB (6.1
+        Inch, Natural...)</p>
+      <h3 class="price">₹ 45,490</h3>
+      <div class="button-group">
+        <button class="add-to-cart">add to cart</button>
+        <button class="buy-now">buy now</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./images/bluetooth-speaker.jpg" alt="product-image" class="product-image">
+      <h1 class="product-name">Bluetooth Speaker</h1>
+      <p class="description">Bluetooth Speaker with HD Sound, Portable Wireless, IPX5 Waterproof, Up to 20H Playtime, TWS Pairing, BT5.3</p>
+      <h3 class="price">₹ 1,599</h3>
+      <div class="button-group">
+        <button class="add-to-cart">add to cart</button>
+        <button class="buy-now">buy now</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./images/noisebuds.jpg" alt="product-image" class="product-image">
+      <h1 class="product-name">Noise Earbuds</h1>
+      <p class="description">JBL Tune Flex - True Wireless Noise Cancelling Earbuds (Black), Small, 32 Ohm</p>
+      <h3 class="price">₹ 4,139</h3>
+      <div class="button-group">
+        <button class="add-to-cart">add to cart</button>
+        <button class="buy-now">buy now</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./images/camera.jpg" alt="product-image" class="product-image">
+      <h1 class="product-name">Digital Camera</h1>
+      <p class="description">Digital Camera, 48MP Cameras for Photography with WiFi & App Control, Macro&Wide Lens-32GB Card</p>
+      <h3 class="price">₹ 10,599</h3>
+      <div class="button-group">
+        <button class="add-to-cart">add to cart</button>
+        <button class="buy-now">buy now</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./images/smart-watch.jpg" alt="product-image" class="product-image">
+      <h1 class="product-name">Smart Watch</h1>
+      <p class="description">Smart Watch Full Touch Smart Watches for Android iOS Phones Compatible (Answer/Make Call) (Black)</p>
+      <h3 class="price">₹ 1,599</h3>
+      <div class="button-group">
+        <button class="add-to-cart">add to cart</button>
+        <button class="buy-now">buy now</button>
+      </div>
+    </div>
+  </section>
+  <script src="./script/navbar.js"></script>
+  <script>
+    const btn = document.getElementById("add-product-btn");
+    btn.addEventListener("click", ()=>{
+      window.location.href = "./add-product.html";
+    })
+  </script>
+</body>
+
+</html>

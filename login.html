@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/login.css" />
+    <title>Login</title>
+  </head>
+
+  <body>
+    <fieldset>
+      <div class="form">
+        <div class="brand">
+          <img src="./images/logo.png" alt="" /><span>SHOPPER PLATFORM</span>
+        </div>
+        <p class="small-text">Start your journey</p>
+        <h1 class="large-text">Sign in to Shopper Platform</h1>
+        <form>
+          <input
+            class="in"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="example@gmail.com"
+          />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+          />
+          <button class="sign-in-btn" id="sign-in-btn"><a href="./index.html">Sign In</a></button>
+        </form>
+        <p class="other-options-text">
+          <span class="line line1"></span>or sign in with<span
+            class="line line2"
+          ></span>
+        </p>
+        <div class="other-options">
+          <button class="facebook"></button>
+          <button class="google"></button>
+          <button class="apple"></button>
+        </div>
+      </div>
+      <div class="image"></div>
+    </fieldset>
+    <script>
+      const signInBtn = document.getElementById("sign-in-btn");
+      signInBtn.addEventListener("click", function () {
+        window.location.href = "./index.html";
+      });
+    </script>
+  </body>
+</html>

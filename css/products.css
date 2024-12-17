@@ -1,0 +1,129 @@
+.search {
+  background-color: rgb(60, 203, 53);
+  padding: 20px 0;
+  position: relative;
+}
+
+.search form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.search form input {
+  height: 40px;
+  width: 300px;
+  border-radius: 5px;
+  border: none;
+  padding: 0 10px;
+  transition: box-shadow linear 0.2s;
+}
+.search form input:focus {
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.848);
+}
+.search button {
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  padding: 0 20px;
+  text-transform: capitalize;
+  font-size: 1rem;
+  cursor: pointer;
+  color: white;
+}
+
+.search-btn{
+  background-color: gray;
+}
+
+.add-product-btn{
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  transform: translateY(-50%);
+  background-color: rgb(54, 96, 224);
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px;
+  background-color: rgba(137, 203, 150, 0.412);
+  height: calc(100vh - 80px);
+  overflow: auto;
+}
+
+.card {
+  height: fit-content;
+  width: 30%;
+  padding: 20px 0;
+  min-width: 350px;
+  max-width: 500px;
+  background-color: white;
+  border-radius: 5px;
+}
+.product-image {
+  height: 100px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.product-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(14, 166, 14);
+  text-align: center;
+  padding: 8px 0;
+}
+
+.description {
+  font-size: 13px;
+  text-align: center;
+  padding: 8px 3px;
+}
+
+.price {
+  color: rgb(237, 41, 41);
+  text-align: center;
+  padding: 8px 0;
+}
+
+.button-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+}
+
+.button-group button {
+  height: 40px;
+  padding: 0 15px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  color: white;
+  margin: 0 10px;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.add-to-cart {
+  background-color: rgb(242, 70, 70);
+}
+
+.buy-now {
+  background-color: rgb(88, 167, 228);
+}
+
+@media screen and (max-width: 1256px) {
+  .add-product-btn{
+    display: block;
+    position: static;
+    margin: auto;
+    transform: none;
+  }
+}
